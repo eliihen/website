@@ -1,20 +1,20 @@
 [
   {
     "id": 0,
-    "name": "Instagram",
-    "link": "https://www.instagram.com/esphen",
-    "icon": "/icons/instagram.svg"
-  },
-  {
-    "id": 1,
     "name": "Github",
     "link": "https://github.com/esphen",
     "icon": "/icons/github.svg"
   },
   {
-    "id": 2,
+    "id": 1,
     "name": "Twitter",
     "link": "https://twitter.com/smakosh",
     "icon": "/icons/twitter.svg"
+  },
+  {
+    "id": 2,
+    "name": "Instagram",
+    "link": "https://www.instagram.com/esphen",
+    "icon": "/icons/instagram.svg"
   }
 ]

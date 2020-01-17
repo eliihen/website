@@ -6,7 +6,7 @@ import { Error, Center, InputField } from './styles';
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
+    .join('&');
 }
 
 const ContactForm = ({
@@ -23,8 +23,7 @@ const ContactForm = ({
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(new FormData(e.target)),
-    })
-      .catch(error => alert(error))
+    }).catch(error => alert(error));
   };
 
   return (
