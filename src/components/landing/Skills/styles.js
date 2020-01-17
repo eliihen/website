@@ -9,49 +9,31 @@ export const Wrapper = styled.div`
 `;
 
 export const SkillsWrapper = styled.div`
-  padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 `;
 
-export const Details = styled.div`
-  flex: 1;
-  padding-left: 2rem;
-
-  @media (max-width: 960px) {
-    padding-left: unset;
-    width: 100%;
-  }
-
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 26pt;
-    color: #212121;
-  }
-
-  p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
-    font-weight: normal;
-    line-height: 1.3;
-    color: #707070;
-  }
+export const SkillWrapper = styled.figure`
 `;
 
-export const Thumbnail = styled.div`
-  flex: 1;
+export const SkillTitle = styled.figcaption`
+  text-align: center;
+  margin-top: 8px;
+`;
 
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
+export const Box = styled.div`
+  height: 96px;
+  width: 96px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: red;
+  overflow: hidden;
+`;
 
-  img {
-    width: 100%;
-  }
+export const Logo = styled.img`
+  padding: ${props => props.padding ?? '16px'};
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 `;
