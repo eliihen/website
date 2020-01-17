@@ -12,7 +12,7 @@ export const Intro = () => (
       <Details>
         <h1>Hi There!</h1>
         <h4>
-          I’m Espen and I’m a fullstack developer with a focus on
+          I’m Espen and I’m a full-stack developer with a focus on
           state&#8209;of&#8209;the&#8209;art frontend!
         </h4>
         <Button as={AnchorLink} href="#contact">

@@ -2,10 +2,7 @@ import styled from 'styled-components';
 import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
-  background-image: url(${detailsIllustration});
-  background-size: contain;
-  background-position: left top;
-  background-repeat: no-repeat;
+  padding: 3rem 0;
 `;
 
 export const SkillsWrapper = styled.div`
@@ -14,8 +11,7 @@ export const SkillsWrapper = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 `;
 
-export const SkillWrapper = styled.figure`
-`;
+export const SkillWrapper = styled.figure``;
 
 export const SkillTitle = styled.figcaption`
   text-align: center;

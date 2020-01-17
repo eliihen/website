@@ -8,9 +8,7 @@ export const Footer = () => (
     <Flex as={Container}>
       <Details>
         <h2>Espen Henriksen</h2>
-        <span>
-          Copyright © {new Date().getFullYear()}
-        </span>
+        <span>Copyright © {new Date().getFullYear()}</span>
       </Details>
       <Links>
         {social.map(({ id, name, link, icon }) => (

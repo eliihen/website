@@ -8,7 +8,10 @@ export const Blurb = () => (
   <Wrapper id="about">
     <BlurbWrapper as={Container}>
       <Thumbnail>
-        <img src={dev} alt="An illustration of a person seated before a browser window displaying dummy visualizations" />
+        <img
+          src={dev}
+          alt="An illustration of a person seated before a browser window displaying dummy visualizations"
+        />
       </Thumbnail>
       <Details>
         <h1>Who am I?</h1>
@@ -18,9 +21,7 @@ export const Blurb = () => (
           Oslo I alternate between working from home and commuting to Oslo to
           work with my awesome team.
         </p>
-        <p>
-          Have a question? I'm always happy to answer
-        </p>
+        <p>Have a question? I'm always happy to answer!</p>
         <Button as={AnchorLink} href="#contact">
           Contact me
         </Button>
