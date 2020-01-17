@@ -27,7 +27,7 @@ export const Box = styled.div`
   width: 96px;
   margin: 0 auto;
   border-radius: 8px;
-  background-color: red;
+  background: ${props => props.bg};
   overflow: hidden;
 `;
 

@@ -14,8 +14,9 @@ export const Blurb = () => (
         <h1>Who am I?</h1>
         <p>
           Since 2014 I've been working to make the web more inclusive and user
-          friendly. From the beautiful Tyrifjord near Oslo I alternate between
-          working from home and commuting to Oslo to work with my awesome team.
+          friendly. From the beautiful Tyrifjord near the Norwegian capital of
+          Oslo I alternate between working from home and commuting to Oslo to
+          work with my awesome team.
         </p>
         <p>
           Have a question? I'm always happy to answer
