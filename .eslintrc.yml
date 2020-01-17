@@ -1,0 +1,10 @@
+---
+extends:
+  - eslint:recommended
+  - plugin:jsx-a11y/recommended
+  - plugin:import/errors
+  - plugin:import/warnings
+  - plugin:import/typescript
+  - prettier
+
+parser: babel-eslint
