@@ -1,5 +1,4 @@
-import React from 'react';
-import Recaptcha from 'react-google-recaptcha';
+import React, { useState } from 'react';
 import { Button, Input } from 'components/common';
 import { Error, Center, InputField } from './styles';
 
@@ -16,14 +15,26 @@ const ContactForm = ({
   errors,
   touched,
 }) => {
-  const onSubmit = e => {
-    e.preventDefault();
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(e.target)),
-    }).catch(error => alert(error));
+  const onSubmit = async e => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(e.target)),
+      });
+    } catch (error) {
+      alert(error);
+      setSubmitting(false);
+      return;
+    }
+
+    setSubmitted(true);
   };
 
   return (
@@ -49,6 +60,7 @@ const ContactForm = ({
           component="input"
           aria-label="name"
           placeholder="Full name*"
+          required
         />
       </InputField>
       <InputField>
@@ -59,31 +71,32 @@ const ContactForm = ({
           type="email"
           name="email"
           placeholder="Email*"
+          required
         />
       </InputField>
       <InputField>
         <Input
-          component="textarea"
+          as="textarea"
           aria-label="message"
           id="message"
           rows="8"
           type="text"
           name="message"
           placeholder="Message*"
+          required
         />
       </InputField>
-      {/*values.success && (
+      {submitted && (
         <InputField>
           <Center>
-            <h4>
-              Your message has been successfully sent, I will get back to you
-              ASAP!
+            <h4 role="alert">
+              Your message has been successfully sent, thanks!
             </h4>
           </Center>
         </InputField>
-      )*/}
+      )}
       <Center>
-        <Button secondary type="submit">
+        <Button secondary type="submit" disabled={submitting}>
           Submit
         </Button>
       </Center>

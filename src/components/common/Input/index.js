@@ -12,8 +12,8 @@ export const Input = styled.input`
   ${({ error }) =>
     error &&
     `
-		border-color: #ff4136;
-	`}
+    border-color: #ff4136;
+  `}
 
   &::placeholder {
     color: #a7a7a7;
