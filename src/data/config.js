@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Espen Henriksen',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+  logo: 'https://espen.dev/favicon/favicon-512.png',
   author: 'Espen Henriksen',
   url: 'https://espen.dev',
   legalName: 'Espen Henriksen',
