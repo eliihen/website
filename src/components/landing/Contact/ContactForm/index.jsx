@@ -60,6 +60,7 @@ const ContactForm = ({
           component="input"
           aria-label="name"
           placeholder="Full name*"
+          autoComplete="name"
           required
         />
       </InputField>
@@ -71,6 +72,7 @@ const ContactForm = ({
           type="email"
           name="email"
           placeholder="Email*"
+          autoComplete="email"
           required
         />
       </InputField>
@@ -83,6 +85,7 @@ const ContactForm = ({
           type="text"
           name="message"
           placeholder="Message*"
+          autoComplete="off"
           required
         />
       </InputField>
