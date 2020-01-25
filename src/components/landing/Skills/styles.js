@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { DialogContent } from '@reach/dialog';
 import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
@@ -51,4 +52,24 @@ export const Logo = styled.img`
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+`;
+
+export const StyledDialogContent = styled(DialogContent)`
+  padding: 0;
+`;
+
+export const Hero = styled.div`
+  background: ${props => props.bg};
+  width: 100%;
+  padding: 24px 0;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-height: 200px;
+  }
+`;
+
+export const CardText = styled.article`
+  padding: 2rem;
 `;

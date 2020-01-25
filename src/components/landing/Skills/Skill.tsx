@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { useId } from "@reach/auto-id";
-import { SkillWrapper, SkillTitle, Box, Logo } from './styles';
+import { SkillWrapper, SkillTitle, Box, Logo, StyledDialogContent, Hero, CardText } from './styles';
 
 import { Button } from 'components/common';
 import VisuallyHidden from '@reach/visually-hidden';
-import { Dialog, DialogOverlay, DialogContent } from '@reach/dialog';
+import { Dialog, DialogOverlay } from '@reach/dialog';
 import { animated, useTransition } from 'react-spring';
 import '@reach/dialog/styles.css';
 
@@ -23,7 +23,7 @@ const Skill: React.FC<Props> = ({ title, logo, children, padding, bg }) => {
   const close = () => setShowDialog(false);
 
   const AnimatedDialogOverlay = animated(DialogOverlay);
-  const AnimatedDialogContent = animated(DialogContent);
+  const AnimatedDialogContent = animated(StyledDialogContent);
   const transitions = useTransition(showDialog, null, {
     from: { opacity: 0, y: -100 },
     enter: { opacity: 1, y: 0 },
@@ -51,11 +51,16 @@ const Skill: React.FC<Props> = ({ title, logo, children, padding, bg }) => {
                 }}
                 aria-labelledby={id}
               >
-                <h2>{title}</h2>
-                {children}
-                <Button onClick={close}>
-                  Close
-                </Button>
+                <Hero bg={bg}>
+                  <img src={logo} alt={title} />
+                </Hero>
+                <CardText>
+                  <h2>{title}</h2>
+                  {children}
+                  <Button onClick={close}>
+                    Close
+                  </Button>
+                </CardText>
               </AnimatedDialogContent>
             </AnimatedDialogOverlay>
           ),

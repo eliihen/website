@@ -25,7 +25,12 @@ export const Skills = () => (
         </p>
       </Skill>
 
-      <Skill title="JavaScript + TypeScript" logo={javascript} padding="0">
+      <Skill
+        title="JavaScript + TypeScript"
+        logo={javascript}
+        padding="0"
+        bg="#f7df1e"
+      >
         <p>
           The transition from ES5 to ES6 marked a huge shift in the JavaScript
           ecosystem. From modules to constants and classes, this release enabled
@@ -89,7 +94,7 @@ export const Skills = () => (
         </p>
       </Skill>
 
-      <Skill title="Accessibility" logo={climbing} padding="0">
+      <Skill title="Accessibility" logo={climbing} padding="0" bg="#000000">
         <p>
           We often forget that most people are temporarily-abled. We get old,
           lose our vision, break arms after falling or get{' '}
@@ -117,7 +122,7 @@ export const Skills = () => (
         </p>
       </Skill>
 
-      <Skill title="Privacy + Security" logo={rocket} padding="0">
+      <Skill title="Privacy + Security" logo={rocket} padding="0" bg="#f3f3f3">
         <p>
           More information to come
         </p>
