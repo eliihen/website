@@ -5,13 +5,14 @@
   "version": "0.1.2",
   "author": "Espen Henriksen",
   "dependencies": {
+    "@reach/auto-id": "^0.7.3",
+    "@reach/dialog": "^0.7.3",
+    "@reach/visually-hidden": "^0.7.3",
     "dotenv": "^8.2.0",
-    "formik": "^1.4.1",
     "gatsby": "^2.17.7",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-canonical-urls": "^2.0.8",
     "gatsby-plugin-favicon": "^3.1.6",
-    "gatsby-plugin-google-analytics": "^2.0.8",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-nprogress": "^2.0.7",
     "gatsby-plugin-offline": "^3.0.14",
@@ -28,8 +29,8 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.0",
-    "styled-components": "^5.0.0",
-    "yup": "^0.26.6"
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.0.0"
   },
   "license": "MIT",
   "scripts": {
@@ -41,6 +42,7 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
+    "@types/react": "^16.9.19",
     "@typescript-eslint/parser": "^2.16.0",
     "babel-eslint": "^9.0.0",
     "babel-plugin-styled-components": "^1.10.6",
@@ -49,6 +51,7 @@
     "eslint-plugin-html": "^5.0.3",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "gatsby-plugin-typescript-checker": "^1.1.1",
     "prettier": "^1.19.1",
     "typescript": "^3.7.4"
   }

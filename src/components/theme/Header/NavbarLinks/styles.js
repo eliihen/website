@@ -9,29 +9,33 @@ export const Wrapper = styled.div`
   ${({ desktop }) =>
     desktop
       ? `
-			@media (max-width: 960px) {
-					display: none;
-			}
+      @media (max-width: 960px) {
+        display: none;
+      }
 
-			a {
-					margin-right: 1rem;
+      a {
+        margin-right: 1rem;
 
-					&:last-child {
-							margin-right: unset;
-					}
-			}
-		`
+        &:last-child {
+          margin-right: unset;
+        }
+      }
+    `
       : `
-			padding: 3rem;
-			display: flex;
-			flex-direction: column;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
 
-			a {
-					margin-bottom: 1rem;
+      @media (min-width: 961px) {
+        display: none;
+      }
 
-					&:last-child {
-							margin-bottom: unset;
-					}
-			}
-	`}
+      a {
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: unset;
+        }
+      }
+  `}
 `;

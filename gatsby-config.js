@@ -12,6 +12,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-typescript',
+    // TODO
+    // 'gatsby-plugin-typescript-checker',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
@@ -33,13 +35,6 @@ module.exports = {
       options: {
         color: config.themeColor,
         showSpinner: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: config.googleAnalyticsID,
-        head: true,
       },
     },
     {

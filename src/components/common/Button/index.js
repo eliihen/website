@@ -17,6 +17,7 @@ export const Button = styled.button`
 
   &:focus {
     outline: none;
+    background: #045eac;
   }
 
   &:disabled {

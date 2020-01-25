@@ -20,21 +20,19 @@ export const SEO = ({
   location = '',
 }) => {
   const structuredDataOrganization = JSON.stringify({
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "legalName": legalName,
-    "url": url,
-    "logo": logo,
-    "foundingDate": foundingDate,
-    "founders": [{
-      "@type": "Person",
-      "name": legalName
-    }],
-    "sameAs": [
-      socialLinks.twitter,
-      socialLinks.instagram,
-      socialLinks.github
-    ]
+    '@context': 'http://schema.org',
+    '@type': 'Organization',
+    legalName: legalName,
+    url: url,
+    logo: logo,
+    foundingDate: foundingDate,
+    founders: [
+      {
+        '@type': 'Person',
+        name: legalName,
+      },
+    ],
+    sameAs: [socialLinks.twitter, socialLinks.instagram, socialLinks.github],
   });
 
   return (
