@@ -1,23 +1,11 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 import { Button, Input } from 'components/common';
 import GPGKey from './GPGKey';
-import { Error, Center, InputField } from './styles';
+import { Center, InputField } from './styles';
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-}
-
-const ContactForm = ({
-  setFieldValue,
-  isSubmitting,
-  values,
-  errors,
-  touched,
-}) => {
-  const [submitting, setSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+const ContactForm = () => {
+  const [submitting, setSubmitting] = React.useState(false);
+  const [submitted, setSubmitted] = React.useState(false);
 
   const onSubmit = async e => {
     e.preventDefault();

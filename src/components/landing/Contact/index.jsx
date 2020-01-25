@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Container } from 'components/common';
 import contact from 'assets/illustrations/contact.svg';
 import { Wrapper, Details, Thumbnail } from './styles';

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 import { Button } from 'components/common';
-import { Dialog, DialogOverlay, DialogContent } from '@reach/dialog';
+import { Dialog } from '@reach/dialog';
 
 const LinkButton = styled.button`
   background: none;
@@ -11,8 +11,8 @@ const LinkButton = styled.button`
   margin-bottom: 16px;
 `;
 
-export const GPGKey = () => {
-  const [showDialog, setShowDialog] = useState(false);
+const GPGKey = () => {
+  const [showDialog, setShowDialog] = React.useState(false);
   const open = () => setShowDialog(true);
   const close = () => setShowDialog(false);
 

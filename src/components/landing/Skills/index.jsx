@@ -1,6 +1,5 @@
-import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Container, Button } from 'components/common';
+import * as React from 'react';
+import { Container } from 'components/common';
 import react from 'assets/icons/react.svg';
 import javascript from 'assets/icons/javascript.svg';
 import linux from 'assets/icons/linux.png';
@@ -9,7 +8,7 @@ import climbing from 'assets/icons/climbing.jpg';
 import rocket from 'assets/icons/rocket.jpg';
 
 import Skill from './Skill';
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import { Wrapper, SkillsWrapper, } from './styles';
 
 export const Skills = () => (
   <Wrapper id="skills">
@@ -101,7 +100,7 @@ export const Skills = () => (
           <a
             href="https://en.wikipedia.org/wiki/Repetitive_strain_injury"
             target="_blank"
-            rel="noopener noreferer"
+            rel="noopener noreferrer"
           >
             RSI
           </a>. All these conditions affect our ability to use websites in a
@@ -123,6 +122,11 @@ export const Skills = () => (
       </Skill>
 
       <Skill title="Privacy + Security" logo={rocket} padding="0" bg="#f3f3f3">
+        <p>
+          While technology is the building block of the modern world, It's also
+          terrifying to be on the inside and see just how fragile the house of
+          cards we've built is.
+        </p>
         <p>
           More information to come
         </p>

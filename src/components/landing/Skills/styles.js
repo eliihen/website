@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { DialogContent } from '@reach/dialog';
-import detailsIllustration from 'assets/illustrations/details.svg';
 
 export const Wrapper = styled.div`
   padding: 3rem 0;
@@ -56,6 +55,9 @@ export const Logo = styled.img`
 
 export const StyledDialogContent = styled(DialogContent)`
   padding: 0;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
 `;
 
 export const Hero = styled.div`

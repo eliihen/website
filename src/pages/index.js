@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import { Layout, SEO } from 'components/common';
 import { Intro, Blurb, Skills, Contact, Projects } from 'components/landing';
 
-export default () => (
+const LandingPage = () => (
   <Layout>
     <SEO />
     <Intro />
@@ -12,3 +12,5 @@ export default () => (
     <Contact />
   </Layout>
 );
+
+export default LandingPage;

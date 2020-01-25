@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Wrapper, Bar } from './styles';
 
 const Hamburger = ({ sidebar, toggle }) => (

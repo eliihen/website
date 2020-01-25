@@ -11,6 +11,7 @@ module.exports = {
     author: config.author,
   },
   plugins: [
+    'gatsby-plugin-eslint',
     'gatsby-plugin-typescript',
     // TODO
     // 'gatsby-plugin-typescript-checker',
@@ -68,5 +69,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-robots-txt',
   ],
 };

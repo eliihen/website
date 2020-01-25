@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Card } from 'components/common';
 import starIcon from 'assets/icons/star.svg';

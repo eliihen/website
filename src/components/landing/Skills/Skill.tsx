@@ -1,10 +1,9 @@
-import React, { useState, useRef } from 'react';
+import * as React from 'react';
 import { useId } from "@reach/auto-id";
 import { SkillWrapper, SkillTitle, Box, Logo, StyledDialogContent, Hero, CardText } from './styles';
 
 import { Button } from 'components/common';
-import VisuallyHidden from '@reach/visually-hidden';
-import { Dialog, DialogOverlay } from '@reach/dialog';
+import { DialogOverlay } from '@reach/dialog';
 import { animated, useTransition } from 'react-spring';
 import '@reach/dialog/styles.css';
 
@@ -18,7 +17,7 @@ type Props = {
 
 const Skill: React.FC<Props> = ({ title, logo, children, padding, bg }) => {
   const id = useId();
-  const [showDialog, setShowDialog] = useState(false);
+  const [showDialog, setShowDialog] = React.useState(false);
   const open = () => setShowDialog(true);
   const close = () => setShowDialog(false);
 
