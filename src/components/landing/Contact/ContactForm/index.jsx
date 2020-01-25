@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Input } from 'components/common';
+import GPGKey from './GPGKey';
 import { Error, Center, InputField } from './styles';
 
 function encode(data) {
@@ -102,6 +103,7 @@ const ContactForm = ({
         <Button secondary type="submit" disabled={submitting}>
           Submit
         </Button>
+        <GPGKey />
       </Center>
     </form>
   );

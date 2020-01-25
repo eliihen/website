@@ -8,6 +8,7 @@ const LinkButton = styled.button`
   border: none;
   cursor: pointer;
   color: blue;
+  margin-bottom: 16px;
 `;
 
 export const GPGKey = () => {
@@ -17,7 +18,7 @@ export const GPGKey = () => {
 
   return (
     <>
-      <LinkButton onClick={open}>Show my GPG key</LinkButton>
+      <LinkButton type="button" onClick={open}>Show my GPG key</LinkButton>
       <Dialog isOpen={showDialog} onDismiss={close}>
         <h2>GPG Key</h2>
         <p>
