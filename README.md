@@ -1,4 +1,4 @@
-# Personal website
+# Personal website [![Build Status](https://travis-ci.org/esphen/website.svg?branch=master)](https://travis-ci.org/esphen/website)
 
 This is the source code of my personal website. Feel free to have a peek.
 
