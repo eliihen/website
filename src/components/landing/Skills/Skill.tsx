@@ -1,6 +1,14 @@
 import * as React from 'react';
-import { useId } from "@reach/auto-id";
-import { SkillWrapper, SkillTitle, Box, Logo, StyledDialogContent, Hero, CardText } from './styles';
+import { useId } from '@reach/auto-id';
+import {
+  SkillWrapper,
+  SkillTitle,
+  Box,
+  Logo,
+  StyledDialogContent,
+  Hero,
+  CardText,
+} from './styles';
 
 import { Button } from 'components/common';
 import { DialogOverlay } from '@reach/dialog';
@@ -8,11 +16,11 @@ import { animated, useTransition } from 'react-spring';
 import '@reach/dialog/styles.css';
 
 type Props = {
-  title: string,
-  logo: string,
-  children: React.Node,
-  padding: number,
-  bg: string,
+  title: string;
+  logo: string;
+  children: React.Component;
+  padding: number;
+  bg: string;
 };
 
 const Skill: React.FC<Props> = ({ title, logo, children, padding, bg }) => {
@@ -29,7 +37,6 @@ const Skill: React.FC<Props> = ({ title, logo, children, padding, bg }) => {
     leave: { opacity: 0, y: -100 },
   });
 
-
   return (
     <>
       <SkillWrapper onClick={open}>
@@ -41,7 +48,10 @@ const Skill: React.FC<Props> = ({ title, logo, children, padding, bg }) => {
       {transitions.map(
         ({ item, key, props: styles }) =>
           item && (
-            <AnimatedDialogOverlay key={key} style={{ opacity: styles.opacity }}>
+            <AnimatedDialogOverlay
+              key={key}
+              style={{ opacity: styles.opacity }}
+            >
               <AnimatedDialogContent
                 style={{
                   transform: styles.y.interpolate(
@@ -56,9 +66,7 @@ const Skill: React.FC<Props> = ({ title, logo, children, padding, bg }) => {
                 <CardText>
                   <h2>{title}</h2>
                   {children}
-                  <Button onClick={close}>
-                    Close
-                  </Button>
+                  <Button onClick={close}>Close</Button>
                 </CardText>
               </AnimatedDialogContent>
             </AnimatedDialogOverlay>

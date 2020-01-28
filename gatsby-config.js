@@ -13,8 +13,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-eslint',
     'gatsby-plugin-typescript',
-    // TODO
-    // 'gatsby-plugin-typescript-checker',
+    'gatsby-plugin-typescript-checker',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
