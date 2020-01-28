@@ -1,15 +1,39 @@
 {
-  "name": "portfolio",
+  "name": "espen.dev",
   "private": true,
-  "description": "A simple portfolio for developers",
-  "version": "0.1.2",
+  "description": "The source code for the espen.dev website",
+  "version": "1.0.0",
   "author": "Espen Henriksen",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop -o",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "npm run lint --fix",
+    "reset": "rm -rf .cache/ public/",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+   "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn test"
+    }
+  },
   "dependencies": {
     "@reach/auto-id": "^0.7.4",
     "@reach/dialog": "^0.7.4",
     "@reach/visually-hidden": "^0.7.4",
+    "@types/react": "^16.9.19",
+    "@typescript-eslint/parser": "^2.17.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-styled-components": "^1.10.7",
     "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
     "gatsby": "^2.19.5",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-canonical-urls": "^2.0.8",
@@ -25,39 +49,19 @@
     "gatsby-plugin-sitemap": "^2.2.26",
     "gatsby-plugin-styled-components": "^3.1.18",
     "gatsby-plugin-typescript": "^2.1.26",
+    "gatsby-plugin-typescript-checker": "^1.1.1",
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-source-graphql": "^2.1.32",
     "gatsby-transformer-sharp": "^2.3.13",
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1",
     "prop-types": "^15.6.2",
     "react": "^16.11.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.0",
-    "react-spring": "^8.0.27",
-    "styled-components": "^5.0.0"
-  },
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop -o",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "npm run lint --fix",
-    "reset": "rm -rf .cache/ public/",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
-  "devDependencies": {
-    "@types/react": "^16.9.19",
-    "@typescript-eslint/parser": "^2.17.0",
-    "babel-eslint": "^10.0.3",
-    "babel-plugin-styled-components": "^1.10.7",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-html": "^6.0.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.0",
-    "gatsby-plugin-typescript-checker": "^1.1.1",
-    "prettier": "^1.19.1",
+    "react-spring": "^9.0.0-beta.34",
+    "styled-components": "^5.0.0",
     "typescript": "^3.7.5"
   }
 }
