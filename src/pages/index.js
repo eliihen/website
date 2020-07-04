@@ -1,6 +1,13 @@
 import * as React from 'react';
 import { Layout, SEO } from 'components/common';
-import { Intro, Blurb, Skills, Contact, Projects } from 'components/landing';
+import {
+  Intro,
+  Blurb,
+  Leader,
+  Skills,
+  Contact,
+  Projects,
+} from 'components/landing';
 
 const LandingPage = () => (
   <Layout>
@@ -8,6 +15,7 @@ const LandingPage = () => (
     <Intro />
     <Skills />
     <Blurb />
+    <Leader />
     <Projects />
     <Contact />
   </Layout>
