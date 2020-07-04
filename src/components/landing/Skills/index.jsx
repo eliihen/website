@@ -8,7 +8,7 @@ import climbing from 'assets/icons/climbing.jpg';
 import rocket from 'assets/icons/rocket.jpg';
 
 import Skill from './Skill';
-import { Wrapper, SkillsWrapper, } from './styles';
+import { Wrapper, SkillsWrapper } from './styles';
 
 export const Skills = () => (
   <Wrapper id="skills">
@@ -16,11 +16,34 @@ export const Skills = () => (
       <Skill title="React" logo={react} padding="0" bg="#20232a">
         <p>
           I have over {new Date().getFullYear() - 2015} years of experience with
-          React, and consider myself a seasoned veteran.
+          React, and with it by my side as my tool of choice, I consider myself
+          a seasoned veteran.
         </p>
 
         <p>
-          More information to come.
+          Through my travels with React I have built internal libraries that are
+          critical to the day-to-day operations of my company like component
+          libraries, data fetching frameworks and design systems. I have also
+          developed libraries that are consumed by external users and monetized
+          as a product offering where API stability and documentation is
+          paramount.
+        </p>
+
+        <p>
+          Having worked for many years developing industry-leading technology
+          for the financial sector, I know a thing or two about working with
+          complex projects that have strict standards in terms of uptime and
+          reliability. This experience is something I take with me in everything
+          I do, foreseeing the consequences of decisions before they are taken.
+        </p>
+
+        <p>
+          An advantage of having worked with React for a while is the ability to
+          reflect over the trends of the library. Trends come and go like the
+          seasons, and I often find myself being able to relate the newest thing
+          with a library or technique that came out a while ago, merging the
+          best of both worlds into something that is better than the sum of
+          their parts.
         </p>
       </Skill>
 
@@ -47,7 +70,43 @@ export const Skills = () => (
         </p>
 
         <p>
-          More information to come.
+          This transition was exhilarating and ushered in a tidal-wave of
+          innovation into the front-end space. All throughout this time I have
+          been paying close attention to the trends of the ecosystem, forwarding
+          any relevant innovations to my team. Because of this immersion I am
+          often a person that is consulted by my peers, and I'm always quick to
+          help when needs be.
+        </p>
+
+        <p>
+          A few noteable libraries that I have worked with a fair amount are:
+        </p>
+        <ul>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Node.js</li>
+          <li>Angular.js</li>
+          <li>Moment.js</li>
+          <li>date-fns</li>
+          <li>Highcharts</li>
+          <li>Redux</li>
+          <li>Prettier</li>
+          <li>ESLint</li>
+          <li>Lerna</li>
+          <li>Redux Form & Final Form</li>
+          <li>react-query</li>
+          <li>CSS preprocessors (LESS, SCSS, PostCSS, CSS modules)</li>
+          <li>CSS-in-JS (styled-components, emotion, xstyled)</li>
+          <li>GraphQL (Apollo)</li>
+          <li>Gatsby</li>
+          <li>Next.js</li>
+          <li>Sentry.io</li>
+        </ul>
+        <p>
+          <i>
+            Please note that this list is in arbitrary order, seldom updated and
+            non-exhaustive.
+          </i>
         </p>
       </Skill>
 
@@ -103,21 +162,36 @@ export const Skills = () => (
             rel="noopener noreferrer"
           >
             RSI
-          </a>. All these conditions affect our ability to use websites in a
+          </a>
+          . All these conditions affect our ability to use websites in a
           "normal" manner. This is why accessibility is important - it's about
           making the web accessible for everyone, even ourselves in the future.
         </p>
 
         <p>
-          Using best practices for developing websites will also make .
-          Using colors with a decent contrast will make websites read better
-          when read on a phone in the bright sun, using semantic elements allows
-          power users to use keyboard navigation like pressing
-          <code>Enter</code> to submit a form.
+          It's important to rely on best practices for developing websites, as
+          these will not only help users with reduced motor functions, it also
+          helps power users use the website more effectively! By using
+          techniques that are recognized by the browser like sematic elements,
+          keyboard shortcuts and browser assistance like auto-fill and native UI
+          like date pickers work out-of-the-box. Users will also appreciate
+          colors with a decent contrast, as it will make websites read better
+          when read on a phone in the bright sun.
         </p>
 
         <p>
-          More information to come.
+          These techniques are something a developer learns over time by
+          acknowledging the need to develop websites in an accessible manner and
+          then doing it for some time. As a developer who feels accessibility is
+          paramount, I have many years of experience with designing and
+          developing accessible experiences.
+        </p>
+        <p>
+          Notice, for example, the trapping of the keyboard navigation within
+          this dialogue. A press of the tab key will cycle between the
+          interactive elements of this modal. When this dialogue is closed, the
+          the focus is returned back to the place you were previously so that
+          you kan keep tabbing through the page without being reset to the top.
         </p>
       </Skill>
 
@@ -125,10 +199,23 @@ export const Skills = () => (
         <p>
           While technology is the building block of the modern world, It's also
           terrifying to be on the inside and see just how fragile the house of
-          cards we've built is.
+          cards we've built is. As developers we have a responsibility to all
+          our users to ensure their data is kept safe and their devices secure.
         </p>
         <p>
-          More information to come
+          As a developer I take security seriously. Through hosting my own
+          servers and learning from experts in the field of infosec, I have
+          gained good experience in the field of cyber security. This experience
+          is put into use all throughout the process of producing software, from
+          identifying vulnerable architecture in the planning process, writing
+          secure code and reviewing other people's code and also identifying
+          threats and security vulnerabilities in existing solutions.
+        </p>
+        <p>
+          I'm no stranger to the practical applications of security in my daily
+          life either. I am a multi-year user of GPG, YubiKey, encrypted backups
+          and have gone through several projects of hardening my personal
+          devices.
         </p>
       </Skill>
     </SkillsWrapper>
