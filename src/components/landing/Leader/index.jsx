@@ -11,7 +11,7 @@ export const Leader = () => (
         <h1>What am I like?</h1>
         <p>
           I pride myself on being an innovative and knowledgable developer. When
-          given the change I revel in the ability to discover and develop new
+          given the chance I revel in the ability to discover and develop new
           technology.
         </p>
         <p>
