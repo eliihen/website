@@ -18,7 +18,7 @@ export const Details = styled.div`
   padding-right: 2rem;
 
   @media (max-width: 960px) {
-    padding-left: unset;
+    padding-right: unset;
     width: 100%;
   }
 
