@@ -5,6 +5,9 @@ export const Button = styled.button`
   border-radius: 3px;
   padding: 0.7rem 2.5rem;
   border: none;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;

@@ -23,6 +23,9 @@ export const Leader = () => (
         <Button as="a" href={profile}>
           Read my profile
         </Button>
+        <Button as="a" href="https://www.16personalities.com/intj-personality">
+          The Architect
+        </Button>
       </Details>
       <Thumbnail>
         <img src={personality} alt="A smart person leaving an orderly desk" />
