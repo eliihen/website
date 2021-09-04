@@ -3,11 +3,24 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/dev.svg';
-import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
+import {
+  Wrapper,
+  MeetupContainer,
+  IntroWrapper,
+  Details,
+  Thumbnail,
+} from './styles';
 
 export const Intro = () => (
   <Wrapper>
     <Header />
+    <MeetupContainer
+      href="https://www.meetup.com/fosseprog"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Looking for FosseProg, the Hønefoss meetup? Click here to read more
+    </MeetupContainer>
     <IntroWrapper as={Container}>
       <Details>
         <h1>Hi There!</h1>

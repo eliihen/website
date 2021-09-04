@@ -61,3 +61,15 @@ export const Thumbnail = styled.div`
     width: 100%;
   }
 `;
+
+export const MeetupContainer = styled.a`
+  display: block;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  color: #084298;
+  background-color: #cfe2ff;
+  border-color: #b6d4fe;
+  padding: 1rem 1rem;
+`;
