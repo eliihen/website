@@ -72,4 +72,5 @@ export const MeetupContainer = styled.a`
   background-color: #cfe2ff;
   border-color: #b6d4fe;
   padding: 1rem 1rem;
+  border-radius: 0.25rem;
 `;
