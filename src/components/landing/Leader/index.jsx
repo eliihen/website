@@ -2,7 +2,14 @@ import * as React from 'react';
 import { Container, Button } from 'components/common';
 import personality from 'assets/illustrations/personality.svg';
 import profile from 'assets/profile.pdf';
-import { Wrapper, BlurbWrapper, Details, Thumbnail } from './styles';
+import letter from 'assets/letter_of_reference_espen_oms.pdf';
+import {
+  Wrapper,
+  BlurbWrapper,
+  ButtonWrapper,
+  Details,
+  Thumbnail,
+} from './styles';
 
 export const Leader = () => (
   <Wrapper id="personality">
@@ -20,12 +27,20 @@ export const Leader = () => (
           giving developers autonomy and focusing on skill development.
         </p>
         <p>Want to learn more about my personality?</p>
-        <Button as="a" href={profile}>
-          Read my profile
-        </Button>
-        <Button as="a" href="https://www.16personalities.com/intj-personality">
-          The Architect
-        </Button>
+        <ButtonWrapper>
+          <Button as="a" href={profile}>
+            Read my profile
+          </Button>
+          <Button
+            as="a"
+            href="https://www.16personalities.com/intj-personality"
+          >
+            The Architect
+          </Button>
+          <Button as="a" href={letter}>
+            Letter of recommendation
+          </Button>
+        </ButtonWrapper>
       </Details>
       <Thumbnail>
         <img src={personality} alt="A smart person leaving an orderly desk" />

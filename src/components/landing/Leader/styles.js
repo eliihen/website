@@ -48,3 +48,14 @@ export const Thumbnail = styled.div`
     width: 100%;
   }
 `;
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  a {
+    flex-grow: 1;
+    text-align: center;
+  }
+`;
