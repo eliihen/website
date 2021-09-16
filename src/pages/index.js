@@ -7,6 +7,7 @@ import {
   Skills,
   Contact,
   Projects,
+  Timeline,
 } from 'components/landing';
 
 const LandingPage = () => (
@@ -16,6 +17,7 @@ const LandingPage = () => (
     <Skills />
     <Blurb />
     <Leader />
+    <Timeline />
     <Projects />
     <Contact />
   </Layout>
