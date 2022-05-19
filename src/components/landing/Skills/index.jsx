@@ -136,7 +136,7 @@ export const Skills = () => (
         </p>
       </Skill>
 
-      <Skill title="Cloud Native" logo={kubernetes} bg="#f2f2f2">
+      <Skill title="Cloud Native" logo={kubernetes} bg="#ffffff">
         <p>
           As a senior developer and product owner of the platform team in the
           Norwegian Mapping Authority, we have built a cloud native stack from
