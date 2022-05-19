@@ -3,7 +3,7 @@ import { Container } from 'components/common';
 import react from 'assets/icons/react.svg';
 import javascript from 'assets/icons/javascript.svg';
 import linux from 'assets/icons/linux.png';
-import openshift from 'assets/icons/openshift.png';
+import kubernetes from 'assets/icons/kubernetes.jpg';
 import climbing from 'assets/icons/climbing.jpg';
 import rocket from 'assets/icons/rocket.jpg';
 
@@ -136,19 +136,57 @@ export const Skills = () => (
         </p>
       </Skill>
 
-      <Skill title="Containerization" logo={openshift} bg="#f2f2f2">
+      <Skill title="Cloud Native" logo={kubernetes} bg="#f2f2f2">
         <p>
-          I was part of a team that introduced OpenShift to a company that had
-          never used containers in production. This was a massive project
-          involving all teams of the company and re-implementing everything from
-          CI/CD, application runtimes, development- and production environments
-          and more.
+          As a senior developer and product owner of the platform team in the
+          Norwegian Mapping Authority, we have built a cloud native stack from
+          the bottom up. This means we've all had to handle a large amount of
+          challenges, including technical and organizational challenges to
+          build the product that the organization needs. A huge amount of
+          technical discussion and learnings have been part of this process,
+          and as part of this process 
         </p>
 
         <p>
-          Suffice to say, this was a huge undertaking and meant the working
-          group had to understand all concepts of OpenShift, Kubernetes and
-          Docker in detail.
+          In OMS I was part of a team that introduced OpenShift to a company
+          that had never used containers in production. This was a massive
+          project involving all teams of the company and re-implementing
+          everything from CI/CD, application runtimes, development- and
+          production environments and more.
+        </p>
+
+        <p>
+          Suffice to say, these two projects have been huge undertakings and
+          meant the entire platform teams have had to understand a large set
+          of technologies and practices across the entire cloud native
+          ecosystem. To mention a few:
+        </p>
+
+        <ul>
+          <li>Kubernetes</li>
+          <li>Docker/Podman</li>
+          <li>OpenShift/OKD</li>
+          <li>Google Anthos</li>
+          <li>GCP</li>
+          <li>IAM</li>
+          <li>Workload Identity Federation (OIDC)</li>
+          <li>Terraform and Helm - IaC</li>
+          <li>Hybrid Cloud/Mesh</li>
+          <li>OPA Gatekeeper</li>
+          <li>Istio Service Mesh</li>
+          <li>Zero Trust networking (NetworkPolicies, Istio)</li>
+          <li>Value Chain Security (GitHub, Trivy)</li>
+          <li>Tekton</li>
+          <li>Operator SDK, OLM</li>
+          <li>Vault</li>
+          <li>Cloud SQL</li>
+          <li>cert-manager + LetsEncrypt/ACME</li>
+        </ul>
+        <p>
+          <i>
+            Please note that this list is in arbitrary order, seldom updated and
+            non-exhaustive.
+          </i>
         </p>
       </Skill>
 
