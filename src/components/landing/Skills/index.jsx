@@ -3,7 +3,7 @@ import { Container } from 'components/common';
 import react from 'assets/icons/react.svg';
 import javascript from 'assets/icons/javascript.svg';
 import linux from 'assets/icons/linux.png';
-import kubernetes from 'assets/icons/kubernetes.jpg';
+import kubernetes from 'assets/icons/kubernetes.png';
 import climbing from 'assets/icons/climbing.jpg';
 import rocket from 'assets/icons/rocket.jpg';
 
@@ -136,15 +136,15 @@ export const Skills = () => (
         </p>
       </Skill>
 
-      <Skill title="Cloud Native" logo={kubernetes} bg="#ffffff">
+      <Skill title="Cloud Native" logo={kubernetes} bg="#f3f3f3">
         <p>
           As a senior developer and product owner of the platform team in the
           Norwegian Mapping Authority, we have built a cloud native stack from
           the bottom up. This means we've all had to handle a large amount of
-          challenges, including technical and organizational challenges to
-          build the product that the organization needs. A huge amount of
-          technical discussion and learnings have been part of this process,
-          and as part of this process 
+          challenges, including technical and organizational challenges to build
+          the product that the organization needs. A huge amount of technical
+          discussion and learnings have been part of this process, and as part
+          of this process
         </p>
 
         <p>
@@ -157,9 +157,9 @@ export const Skills = () => (
 
         <p>
           Suffice to say, these two projects have been huge undertakings and
-          meant the entire platform teams have had to understand a large set
-          of technologies and practices across the entire cloud native
-          ecosystem. To mention a few:
+          meant the entire platform teams have had to understand a large set of
+          technologies and practices across the entire cloud native ecosystem.
+          To mention a few:
         </p>
 
         <ul>
