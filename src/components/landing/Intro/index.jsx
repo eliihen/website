@@ -26,7 +26,7 @@ export const Intro = () => (
         <h1>Hi There!</h1>
         <h4>
           I’m Espen and I’m a full-stack developer with a focus on
-          state&#8209;of&#8209;the&#8209;art frontend!
+          state&#8209;of&#8209;the&#8209;art web technology!
         </h4>
         <Button as={AnchorLink} href="#contact">
           Contact me

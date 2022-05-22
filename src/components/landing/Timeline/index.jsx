@@ -111,6 +111,10 @@ const events = [
     title: 'Joined Kartverket as Senior Engineer',
     time: '2021',
   },
+  {
+    title: "Became Product Owner for Kartverket's hybrid cloud initiative",
+    time: '2022',
+  },
 ];
 
 export const Timeline = () => (
