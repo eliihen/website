@@ -30,16 +30,15 @@ export const Links = styled.div`
   align-items: center;
 
   a {
-    margin: 0 0.5rem;
+    margin: 0 0.3rem;
 
     img {
       margin: 0;
     }
+  }
 
-    &:first-child,
-    &:last-child {
-      margin: 0;
-    }
+  a:nth-child(2) {
+    margin: 0 0.1rem;
   }
 `;
 
