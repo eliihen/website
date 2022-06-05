@@ -40,8 +40,8 @@ export const Intro = () => {
             src={isPrideMonth ? prideDev : dev}
             alt={
               isPrideMonth
-                ? 'A visualization of a seated person programming'
-                : 'Happy pride month!'
+                ? 'Happy pride month!'
+                : 'A visualization of a seated person programming'
             }
           />
         </Thumbnail>
