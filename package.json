@@ -1,9 +1,9 @@
 {
-  "name": "espen.dev",
+  "name": "eliine.dev",
   "private": true,
-  "description": "The source code for the espen.dev website",
+  "description": "The source code for the eliine.dev website",
   "version": "1.0.0",
-  "author": "Espen Henriksen",
+  "author": "Eline Henriksen",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
