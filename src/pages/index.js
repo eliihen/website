@@ -23,4 +23,9 @@ const LandingPage = () => (
   </Layout>
 );
 
+if (typeof window !== 'undefined' && window.location.host == 'espen.dev') {
+  console.info('Redirecting to updated URL');
+  location.host = 'eliine.dev';
+}
+
 export default LandingPage;

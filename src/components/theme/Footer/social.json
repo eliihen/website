@@ -2,13 +2,13 @@
   {
     "id": 0,
     "name": "Github",
-    "link": "https://github.com/esphen",
+    "link": "https://github.com/eliihen",
     "icon": "/icons/github.svg"
   },
   {
     "id": 1,
     "name": "Twitter",
-    "link": "https://twitter.com/esphen_",
+    "link": "https://twitter.com/eliihen",
     "icon": "/icons/twitter.svg"
   },
   {
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "LinkedIn",
-    "link": "https://www.linkedin.com/in/espen-henriksen",
-    "icon": "/icons/linkedin.png"
+    "link": "https://www.linkedin.com/in/eliine",
+    "icon": "/icons/linkedin.svg"
   }
 ]
