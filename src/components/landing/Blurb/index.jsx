@@ -18,9 +18,9 @@ export const Blurb = () => (
         <p>
           Since 2014 I've been working to make the web more inclusive and user
           friendly. From the beautiful Tyrifjord near the Norwegian capital of
-          Oslo I alternate between working from home and commuting to the{' '}
-          <a href="https://www.kartverket.no/">Norwegian Mapping Authority</a>{' '}
-          to work with my awesome team.
+          Oslo I alternate between working from home and commuting to{' '}
+          <a href="https://www.telenor.no/">Telenor</a> to work with my
+          awesome team.
         </p>
         <p>Have a question? I'm always happy to answer!</p>
         <Button as={AnchorLink} href="#contact">

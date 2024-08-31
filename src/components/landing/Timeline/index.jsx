@@ -115,6 +115,14 @@ const events = [
     title: "Became Product Owner for Kartverket's hybrid cloud initiative",
     time: '2022',
   },
+  {
+    title: "Put Kartverket on the map by speaking at multiple conferences, podcasts and wrote tech blogs",
+    time: '2023',
+  },
+  {
+    title: "Joined Telenor's platform team to strengthen their Google Cloud initiative",
+    time: '2024',
+  },
 ];
 
 export const Timeline = () => (
