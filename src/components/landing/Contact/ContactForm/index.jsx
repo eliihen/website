@@ -31,7 +31,8 @@ const ContactForm = () => {
       name="portfolio-contact"
       method="POST"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
       onSubmit={onSubmit}
     >
       <p hidden>
@@ -88,6 +89,7 @@ const ContactForm = () => {
         </InputField>
       )}
       <Center>
+        <div data-netlify-recaptcha="true"></div>
         <Button secondary type="submit" disabled={submitting}>
           Submit
         </Button>
